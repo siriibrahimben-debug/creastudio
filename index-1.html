@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CréaStudio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --fond:#EEF0F8; --encre:#1B1F3B; --corail:#E4405F; --soleil:#FFC94D; --blanc:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{font-family:"Bricolage Grotesque",system-ui,sans-serif;background:var(--fond);color:var(--encre);line-height:1.6}
+  main{max-width:720px;margin:0 auto;padding:0 20px 60px}
+  header{padding:56px 0 36px}
+  h1{font-size:clamp(3rem,16vw,5.5rem);font-weight:800;line-height:.95;letter-spacing:-.03em}
+  h1 span{display:inline-block;background:var(--soleil);padding:0 .15em;transform:rotate(-2deg)}
+  .accroche{font-size:1.2rem;margin-top:22px;max-width:30ch}
+  .btn{display:inline-block;margin-top:26px;background:var(--corail);color:var(--blanc);padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none}
+  .btn:focus-visible,a:focus-visible{outline:3px solid var(--encre);outline-offset:3px}
+  h2{font-size:1.6rem;margin:48px 0 16px;letter-spacing:-.01em}
+  .offre{background:var(--blanc);border-left:8px solid var(--corail);padding:18px 20px;margin-bottom:14px;border-radius:4px 14px 14px 4px}
+  .offre:nth-child(even){border-left-color:var(--soleil)}
+  .offre h3{font-size:1.15rem}
+  .offre p{margin-top:4px}
+  .etapes{padding-left:1.2rem}
+  .etapes li{margin-bottom:8px}
+  footer{margin-top:56px;padding-top:20px;border-top:2px solid var(--encre);font-size:.95rem}
+  footer a{color:var(--corail);font-weight:600}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Créa<span>Studio</span></h1>
+    <p class="accroche">Des chansons originales et des documents PDF soignés, faits pour toi.</p>
+    <a class="btn" href="#contact">Passer commande</a>
+  </header>
+
+  <section>
+    <h2>Ce que nous créons</h2>
+    <div class="offre">
+      <h3>Chansons originales</h3>
+      <p>Une chanson écrite sur ton histoire, pour un anniversaire, un mariage ou un message à quelqu'un de cher.</p>
+    </div>
+    <div class="offre">
+      <h3>PDF stylisés</h3>
+      <p>Cartes, invitations, CV, affiches et documents mis en page avec un style qui te ressemble.</p>
+    </div>
+    <div class="offre">
+      <h3>Sur mesure</h3>
+      <p>Une autre idée ? Explique-nous ce que tu imagines, on cherche la meilleure façon de la réaliser.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Comment ça marche</h2>
+    <ol class="etapes">
+      <li>Tu nous écris ton idée.</li>
+      <li>On te propose une première version.</li>
+      <li>Tu donnes ton avis, on ajuste.</li>
+      <li>Tu reçois ta création finale.</li>
+    </ol>
+  </section>
+
+  <footer id="contact">
+    <p><strong>Contact</strong></p>
+    <p>Écris-nous sur WhatsApp : <a href="https://wa.me/22664591190">+226 64 59 11 90</a></p>
+    <p style="margin-top:12px">© CréaStudio</p>
+  </footer>
+</main>
+</body>
+</html>
